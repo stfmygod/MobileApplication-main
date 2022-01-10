@@ -1,0 +1,76 @@
+@use 'src/theme/settings.scss' as *;
+
+.home {
+  padding-top: 20px;
+
+  &__content {
+    background-color: $light-grey;
+    margin: auto 20px;
+    padding: 20px;
+    border-radius: 15px;
+
+    > h4 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      font-weight: 600;
+      color: $teal;
+    }
+
+    > form {
+      > div {
+        margin-bottom: 10px;
+      }
+
+      > button {
+        margin-top: 20px;
+        background-color: $dark-grey;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+      }
+    }
+  }
+
+  ion-card {
+    padding: 20px;
+    background: $dark-grey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+    > h3 {
+      margin: 0;
+      color: $light-grey;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &-price {
+    display: block;
+    margin-top: 5px;
+    color: $light-grey;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: $teal;
+  }
+}
+
+.floating-btn {
+  --background: none;
+
+  &:active {
+    --background: none;
+  }
+
+  &-icon {
+    color: $blue;
+  }
+}

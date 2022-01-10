@@ -1,0 +1,30 @@
+@use 'src/theme/settings.scss' as *;
+
+.product-detail {
+  background-color: $dark-grey;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+  &__title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: $teal;
+    text-align: center;
+  }
+
+  &__description {
+    color: $light-grey;
+    font-size: 16px;
+  }
+
+  > button {
+    margin-top: 20px;
+    background-color: $teal;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+}
